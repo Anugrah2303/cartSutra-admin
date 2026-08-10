@@ -1,6 +1,5 @@
-import type { headingProps } from "../../../interface/common";
 
-const Heading1 = ({ title}: headingProps) => {
+const Heading1 = ({ title}: {title: string}) => {
     return (
         <div>
             <h2 className="relative inline-block text-2xl md:text-3xl font-bold tracking-tight ">

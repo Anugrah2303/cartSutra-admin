@@ -1,6 +1,6 @@
-import type { headingProps } from "../../../interface/common";
+import type { HeadingProps } from "../../../interface/common";
 
-const Heading4 = ({ title, subtitle, center = false, className = "" }: headingProps) => {
+const Heading4 = ({ title, subtitle, center = false, className = "" }: HeadingProps) => {
     return (
         <div className={`${center ? "text-center" : ""}`}>
             <h4 className={`relative inline-block text-sm md:text-base font-semibold text-(--text-primary) ${className}`}>

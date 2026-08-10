@@ -1,4 +1,22 @@
-import type { ButtonProps } from "../../interface/common";
+import type { LucideIcon, LucideProps } from "lucide-react";
+import type { ButtonHTMLAttributes } from "react";
+
+type ButtonVariant =
+    | "primary"
+    | "outline"
+    | "secondary"
+    | "danger"
+    | "success"
+    | "icon"
+    | "ghost";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    value?: string;
+    variant?: ButtonVariant;
+    disable?: boolean;
+    Icon?: LucideIcon;
+    options?: LucideProps;
+}
 
 export default function Button({ value, type = "button", disable = false, className = "", variant = "primary", Icon, options, onClick }: ButtonProps) {
     const variants = {

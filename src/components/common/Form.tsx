@@ -1,7 +1,12 @@
-import type { formProps } from "../../interface/common"
+import type { FormEventHandler, PropsWithChildren } from "react";
 import Heading1 from "./Headings/Heading1"
 
-const Form = ({onSubmit, children, title}: formProps) => {
+interface FormProps {
+    onSubmit: FormEventHandler<HTMLFormElement>;
+    title: string;
+}
+
+const Form = ({ onSubmit, children, title }: PropsWithChildren<FormProps>) => {
     return (
         <>
             <div className="min-h-screen w-full flex justify-center items-center">

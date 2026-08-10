@@ -1,6 +1,6 @@
-import type { headingProps } from "../../../interface/common";
+import type { HeadingProps } from "../../../interface/common";
 
-const Heading3 = ({ title, subtitle, center = false }: headingProps) => {
+const Heading3 = ({ title, subtitle, center = false }: HeadingProps) => {
     return (
         <div className={`${center ? "text-center" : ""}`}>
             <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-(--color-primary)/10 border border-(--color-primary)/20 `}>
