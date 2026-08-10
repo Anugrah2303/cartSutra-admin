@@ -109,7 +109,7 @@ This is a solo-built, feature-complete front end (25+ modules) designed with pro
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Anugrah2303/cartSutra-admin
 cd cartSutra-admin
 npm install
 ```
