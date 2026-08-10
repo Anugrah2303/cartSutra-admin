@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+* {
+    user-select: none;
+}
+
+:root {
+
+    --bg-main: #F8FAF8;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F0FDF4;
+
+    /* ===== PRIMARY (BRAND GREEN) ===== */
+    --color-primary: #16A34A;
+    --color-primary-light: #22C55E;
+    --color-primary-dark: #15803D;
+
+    /* ===== SECONDARY ===== */
+    --color-secondary: #0F766E;
+    --color-secondary-light: #14B8A6;
+    --color-secondary-dark: #065F46;
+
+    /* ===== ACCENT ===== */
+    --color-accent: #84CC16;
+    --color-accent-soft: #D9F99D;
+
+    /* ===== BACKGROUND ===== */
+    --bg-main: #f3f3f356;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F0FDF4;
+
+    /* ===== TEXT ===== */
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6B7280;
+
+    /* ===== BORDER ===== */
+    --border-light: #E5E7EB;
+    --border-focus: #22C55E;
+
+    /* ===== STATUS ===== */
+    --success: #22C55E;
+    --error: #EF4444;
+    --warning: #F59E0B;
+    --info: #0EA5E9;
+
+    /* ===== GRADIENT ===== */
+    --gradient-primary: linear-gradient(135deg, #16A34A, #22C55E);
+    --gradient-secondary: linear-gradient(135deg, #065F46, #14B8A6);
+
+    /* ===== SHADOW ===== */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.30);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.60);
+    --shadow-lg: 5px 10px 20px rgba(0, 0, 0, 0.42);
+
+    --shadow-primary: 0 6px 16px rgba(34, 197, 94, 0.5);
+    --shadow-primary-hover: 0 10px 28px rgba(34, 197, 94, 0.7);
+    --shadow-primary-glow: 0 0 18px rgba(34, 197, 94, 0.7);
+    --shadow-primary-lg: 5px 10px 16px rgba(34, 197, 94, 0.5);
+
+
+    /* Sidebar */
+    --sidebar-bg: #0F172A;
+    /* Main Sidebar */
+    --sidebar-item-hover: #1E293B;
+    /* Hover */
+    --sidebar-item-active: #16A34A20;
+    /* Active Background */
+
+    /* Text */
+    --sidebar-title: #CBD5E1;
+    /* Default Text */
+    --sidebar-title-hover: #FFFFFF;
+    --sidebar-title-active: #22C55E;
+
+    /* Icons */
+    --sidebar-icon: #94A3B8;
+    --sidebar-icon-hover: #FFFFFF;
+    --sidebar-icon-active: #22C55E;
+
+    /* Border */
+    --sidebar-border: #1E293B;
+
+    --skeleton-base: #E5E7EB;
+    --skeleton-highlight: #F3F4F6;
+}
+
+/* ================= DARK THEME (FIXED PROPERLY) ================= */
+.dark {
+    /* ===== PRIMARY ===== */
+    --color-primary: #22C55E;
+    --color-primary-light: #4ADE80;
+    --color-primary-dark: #15803D;
+
+    /* ===== SECONDARY ===== */
+    --color-secondary: #14B8A6;
+    --color-secondary-light: #2DD4BF;
+    --color-secondary-dark: #0F766E;
+
+    /* ===== ACCENT ===== */
+    --color-accent: #A3E635;
+    --color-accent-soft: #BEF264;
+
+    /* ===== BACKGROUND (LESS HARSH) ===== */
+    --bg-main: #0B1220;
+    /* not pure black */
+    --bg-card: #111827;
+    /* layered depth */
+    --bg-soft: #1F2937;
+
+    /* ===== TEXT (HIGH READABILITY) ===== */
+    --text-primary: #F9FAFB;
+    --text-secondary: #D1D5DB;
+    --text-muted: #9CA3AF;
+
+    /* ===== BORDER ===== */
+    --border-light: #1F2937;
+    --border-focus: #22C55E;
+
+    /* ===== STATUS ===== */
+    --success: #4ADE80;
+    --error: #F87171;
+    --warning: #FBBF24;
+    --info: #38BDF8;
+
+    /* ===== GRADIENT ===== */
+    --gradient-primary: linear-gradient(135deg, #16A34A, #4ADE80);
+    --gradient-secondary: linear-gradient(135deg, #0F766E, #14B8A6);
+
+    /* ===== SHADOW (SUBTLE, NOT DIRTY) ===== */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+    --shadow-primary: 0 6px 18px rgba(34, 197, 94, 0.35);
+    --shadow-primary-hover: 0 12px 32px rgba(34, 197, 94, 0.5);
+    --shadow-primary-glow: 0 0 22px rgba(74, 222, 128, 0.6);
+
+    --skeleton-base: #1F2937;
+    --skeleton-highlight: #2D3748;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.skeleton-shimmer {
+    background: linear-gradient(90deg, var(--skeleton-base) 25%, var(--skeleton-highlight) 37%, var(--skeleton-base) 63%);
+    background-size: 400% 100%;
+    animation: skeleton-shimmer 1.4s ease infinite;
+}
+
+@keyframes skeleton-shimmer {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}

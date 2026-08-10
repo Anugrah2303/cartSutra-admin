@@ -1,0 +1,26 @@
+import { LayoutDashboard, Package, ShoppingCart, Truck, Store, Users, FolderTree, Tags, BadgePercent, BarChart3, Bell, FileText, UserCog, Settings, CreditCard, Gift, LifeBuoy, RotateCcw, MessageSquareWarning, Wallet, Warehouse } from "lucide-react";
+
+export const NAV_ITEMS = [
+  { label: "Dashboard", icon: LayoutDashboard, path: "/admin" },
+  { label: "Products", icon: Package, path: "/admin/products" },
+  { label: "Categories", icon: FolderTree, path: "/admin/categories" },
+  { label: "Brands", icon: Tags, path: "/admin/brands" },
+  { label: "Orders", icon: ShoppingCart, path: "/admin/orders" },
+  { label: "Shipping", icon: Truck, path: "/admin/shipping" },
+  { label: "Returns", icon: RotateCcw, path: "/admin/returns" },
+  { label: "Vendors", icon: Store, path: "/admin/vendors" },
+  { label: "Warehouses", icon: Warehouse, path: "/admin/warehouses" },
+  { label: "Customers", icon: Users, path: "/admin/customers" },
+  { label: "Reviews", icon: MessageSquareWarning, path: "/admin/reviews" },
+  { label: "Coupons", icon: BadgePercent, path: "/admin/coupons" },
+  { label: "Gift Cards", icon: Gift, path: "/admin/gift-cards" },
+  { label: "Payments", icon: CreditCard, path: "/admin/payouts" },
+  { label: "Refunds", icon: RotateCcw, path: "/admin/refunds" },
+  { label: "Vendor Payouts", icon: Wallet, path: "/admin/vendor-payouts" },
+  { label: "Support Tickets", icon: LifeBuoy, path: "/admin/tickets" },
+  { label: "Reports", icon: BarChart3, path: "/admin/reports" },
+  { label: "Notifications", icon: Bell, path: "/admin/notifications" },
+  { label: "CMS", icon: FileText, path: "/admin/cms" },
+  { label: "Admins", icon: UserCog, path: "/admin/admins" },
+  { label: "Settings", icon: Settings, path: "/admin/settings" },
+];
